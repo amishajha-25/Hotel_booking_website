@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>HOTEL DEEP</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+        <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+        <link rel = "icon" href = "images/logo.png" type = "image/png">
+    </head>
+    <body>
+        
+        <!-- header -->
+        <header class = "header" id = "header">
+            <div class = "head-top">
+                <div class = "site-name">
+                    <span>DELHI</span>
+                </div>
+                <div class = "site-nav">
+                    <span id = "nav-btn">MENU <i class = "fas fa-bars"></i></span>
+                </div>
+            </div>
+
+            <div class = "head-bottom flex">
+                <h2>NICE AND COMFORTABLE PLACE TO STAY</h2>
+                <p>We launched a new kind of capsule hotel. Half was for regular paying customers. The other half was a non-profit capsule 'hotel-home' for teenagers. Both have the same standard. Everyone gets well fed and cared for.</p>
+                <button type = "button" class = "head-btn">GET STARTED</button>
+            </div>
+        </header>
+        <!-- end of header -->
+
+        <!-- side navbar -->
+        <div class = "sidenav" id = "sidenav">
+            <span class = "cancel-btn" id = "cancel-btn">
+                <i class = "fas fa-times"></i>
+            </span>
+
+            <ul class = "navbar">
+                <li><a href = "#header">home</a></li>
+                <li><a href = "#services">services</a></li>
+                <li><a href = "#rooms">rooms</a></li>
+                <li><a href = "#customers">customers</a></li>
+            </ul>
+            <button class = "btn sign-up">sign up</button>
+            <button class = "btn log-in">log in</button>
+        </div>
+        <!-- end of side navbar -->
+
+        <!-- fullscreen modal -->
+        <div id = "modal"></div>
+        <!-- end of fullscreen modal -->
+
+        <!-- body content  -->
+        <section class = "services sec-width" id = "services">
+            <div class = "title">
+                <h2>services</h2>
+            </div>
+            <div class = "services-container">
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-utensils"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Food Service/ Food Runner</h2>
+                        <p>The food is portioned into silver platters in the kitchen itself. The platters are placed on the sideboard with burners or hot plates. At the time of serving, the waiter picks the platter from hot plate and presents it to the host for approval and serves each guest using a service spoon and fork.</p>
+                        <button type = "button" class = "btn">Know More</button>
+                    </div>
+                </article>
+                <!-- end of single service -->
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-swimming-pool"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Refreshment</h2>
+                        <p>We have welcome refreshment on the arrival of the guests and we have designated area in their lobby or lounge where guests can find complimentary refreshments along with that we are offering  afternoon tea service you can enjoy tea with sandwiches and cookies. </p>
+                        <button type = "button" class = "btn">Know More</button>
+                    </div>
+                </article>
+                <!-- end of single service -->
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-broom"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Housekeeping</h2>
+                        <p>Housekeeping staff clean and tidy guest rooms daily or as per guest requests.Bathrooms are thoroughly cleaned and disinfected.They check for any maintenance issues or items that need repair.Housekeeping extends its cleaning efforts to public spaces like lobbies, corridors, elevators, and lounges.Housekeeping handles the laundering of linens, towels, and staff uniforms.</p>
+                        <button type = "button" class = "btn">Know More</button>
+                    </div>
+                </article>
+                <!-- end of single service -->
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-door-closed"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Room Security</h2>
+                        <p>We have facility of key card access along with that we have secure locks proving room number discretion and cctv In-room safes are provided for guests to secure valuable items such as passports, cash, and electronics. During check in it  usually require guests to provide identification and match it with the reservation information for security purposes.</p>
+                        <button type = "button" class = "btn">Know More</button>
+                    </div>
+                </article>
+                <!-- end of single service -->
+            </div>
+        </section>
+
+        <div class = "book">
+            <form class = "book-form">
+                <div class = "form-item">
+                    <label for = "checkin-date">Check In Date: </label>
+                    <input type = "date" id = "chekin-date">
+                </div>
+                <div class = "form-item">
+                    <label for = "checkout-date">Check Out Date: </label>
+                    <input type = "date" id = "chekout-date">
+                </div>
+                <div class = "form-item">
+                    <label for = "adult">Adults: </label>
+                    <input type = "number" min = "1" value = "1" id = "adult">
+                </div>
+                <div class = "form-item">
+                    <label for = "children">Children: </label>
+                    <input type = "number" min = "1" value = "1" id = "children">
+                </div>
+                <div class = "form-item">
+                    <label for = "rooms">Rooms: </label>
+                    <input type = "number" min = "1" value = "1" id = "rooms">
+                </div>
+                <div class = "form-item">
+                    <input type = "submit" class = "btn" value = "Book Now">
+                </div>
+            </form>
+        </div>
+
+        <section class = "rooms sec-width" id = "rooms">
+            <div class = "title">
+                <h2>rooms</h2>
+            </div>
+            <div class = "rooms-container">
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "images/img1.jpg" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>Luxury Rooms</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                ELEGANT DECORE!
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                LAVISH BATHROOMS!
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                SPECTACULAR VIEWS!
+                            </li>
+                        </ul>
+                        <p>Upon entering our luxury rooms, you'll be captivated by the sophisticated and tasteful decor. Our interiors are thoughtfully designed with a harmonious blend of modern aesthetics and classic elegance. Rich color palettes, plush textiles, and exquisite artwork adorn the space, creating an ambiance that exudes refinement.</p>
+                        <p>Our lavish bathrooms equipped with marble countertops, rainfall showers, and deep soaking tubs. Fine toiletries and plush robes await you, promising a spa-like experience within the confines of your room.</p>
+                        <p>Our luxury rooms offer breathtaking views of the city skyline, tranquil gardens, or stunning landscapes. Enjoy the scenery from the comfort of your private balcony or picture windows</p>
+                        <p class = "rate">
+                            <span>Rs2000 /</span> Per Night
+                        </p>
+                        <button type = "button" class = "btn">book now</button>
+                    </div>
+                </article>
+                <!-- end of single room -->
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "images/img2.jpg" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>Luxury Rooms</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                IN-ROOM AMENITIES!
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                PERSONALIZED SERVICES!
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                EXCLUSIVE ACCESS!
+                            </li>
+                        </ul>
+                        <p>Our luxury rooms are equipped with a curated selection of amenities, including a flat-screen TV, in-room dining service, a minibar stocked with premium beverages, and Nespresso coffee machines.</p>
+                        <p>Experience the epitome of hospitality with our dedicated concierge service. Our team is at your disposal 24/7 to cater to your every need, from restaurant reservations to arranging personalized experiences.</p>
+                        <p>As a luxury room guest, you'll enjoy exclusive access to our VIP lounge, where you can enjoy complimentary refreshments and unwind in a private setting.</p>
+                        <p class = "rate">
+                            <span>Rs1800 /</span> Per Night
+                        </p>
+                        <button type = "button" class = "btn">book now</button>
+                    </div>
+                </article>
+                <!-- end of single room -->
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "images/img3.jpg" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>Luxury Rooms</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                               COMPLIMENTARY AMENITIES!
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                PRIVACY AND SECURITY!
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                SPECTACULAR VIEWS!
+                            </li>
+                        </ul>
+                        <p>Your stay includes complimentary high-speed Wi-Fi, daily housekeeping, and a range of services designed to enhance your comfort and convenience.</p>
+                        <p>Rest assured, your privacy and security are of paramount importance to us. Our state-of-the-art security measures ensure that your stay is worry-free.</p>
+                        <p>our luxury rooms offer breathtaking views of the city skyline, tranquil gardens, or stunning landscapes. Enjoy the scenery from the comfort of your private balcony or picture windows.</p>
+                        <p class = "rate">
+                            <span>Rs1500 /</span> Per Night
+                        </p>
+                        <button type = "button" class = "btn">book now</button>
+                    </div>
+                </article>
+                <!-- end of single room -->
+            </div>
+        </section>
+
+
+        <section class = "customers" id = "customers">
+            <div class = "sec-width">
+                <div class = "title">
+                    <h2>customers</h2>
+                </div>
+                <div class = "customers-container">
+                    <!-- single customer -->
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>ROOM COMFORT</h3>
+                        <p>"The room was incredibly comfortable, and I slept like a dream in the cozy bed. It felt like a home away from home."</p>
+                        <img src = "images/cus1.jpegg.jpeg" alt = "customer image">
+                        <span>RAHUL, DELHI</span>
+                    </div>
+                    <!-- end of single customer -->
+                    <!-- single customer -->
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>BUSINESS TRAVEL</h3>
+                        <p>"Your hotel caters excellently to business travelers. The well-equipped business center and high-speed Wi-Fi were crucial for my work-related needs."</p>
+                        <img src = "images/cus.3.webp" alt = "customer image">
+                        <span>ADAHRA, TAMIL NADU</span>
+                    </div>
+                    <!-- end of single customer -->
+                    <!-- single customer -->
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>SERVICE EXCELLENCE</h3>
+                        <p>"The level of service at [Hotel Name] is truly exceptional. Your staff made me feel like a valued guest from the moment I arrived until I checked out."</p>
+                        <img src = "images/cus.2.jpeg" alt = "customer image">
+                        <span>RANBEER, MUMBAI</span>
+                    </div>
+                    <!-- end of single customer -->
+                </div>
+            </div>
+        </section>
+        <!-- end of body content -->
+        
+        <!-- footer -->
+        <footer class = "footer">
+            <div class = "footer-container">
+                <div>
+                    <h2>ABOUT US </h2>
+                    <p>We are here to provide you each and every facilities, our hotel deep is always here to welcome you and your guests !VISIT AGAIN!||THANKYOU||</p>
+                    <ul class = "social-icons">
+                        <li class = "flex">
+                            <i class = "fa fa-twitter fa-2x"></i>
+                        </li>
+                        <li class = "flex">
+                            <i class = "fa fa-facebook fa-2x"></i>
+                        </li>
+                        <li class = "flex">
+                            <i class = "fa fa-instagram fa-2x"></i>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2>Useful Links</h2>
+                    <a href = "#">Blog</a>
+                    <a href = "#">Rooms</a>
+                    <a href = "#">Subscription</a>
+                    <a href = "#">Gift Card</a>
+                </div>
+
+                <div>
+                    <h2>Privacy</h2>
+                    <a href = "#">Career</a>
+                    <a href = "#">About Us</a>
+                    <a href = "#">Contact Us</a>
+                    <a href = "#">Services</a>
+                </div>
+
+                <div>
+                    <h2>Have A Question</h2>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-map-marker-alt"></i>
+                        </span>
+                        <span>
+                            Block number 203, Vasant Kunj, New Delhi,BHARAT, 110064
+                        </span>
+                    </div>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-phone-alt"></i>
+                        </span>
+                        <span>
+                            +91 8810377931
+                        </span>
+                    </div>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-envelope"></i>
+                        </span>
+                        <span>
+                            amishajha@gmail.com
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end of footer -->
+        
+        <script src="script.js"></script>
+    </body>
+</html>
